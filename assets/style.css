@@ -6,13 +6,14 @@ header {
     background-color: cadetblue;
     text-align: center;
     padding: 10px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
 ul {
     list-style: none;
 }
 
 div {
-    /* border: solid; */
+    /* border: solid 2px; */
     padding: 12px;
 }
 
@@ -38,11 +39,22 @@ table {
 .currentCity {
     display: flex;
     flex-direction: column;
-
+    border: 1px solid gray;
+    border-radius: 10px;
+    margin-left: 0px;
 }
+
+.five-day {
+    padding: 20px 0px 10px 30px;
+}
+
 .futureForecast {
     width: 100%;
     display: flex;
     flex-direction: row;
     justify-content: space-between;
+}
+.futuredays {
+    background-color: cadetblue;
+    border-radius: 10px;
 }
