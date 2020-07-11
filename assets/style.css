@@ -1,11 +1,28 @@
 * {
     margin: 0;
 }
+.bg1 {
+    /* The image used */
+    background-image: url("./pexels-photo-440731.jpeg");
+    height: 100%; 
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: auto;
+    background-position-y: -230px;
+  }
+
+.bg2 {
+    background-image: url("./pexels-photo-440731.jpeg");
+    height: 100%; 
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: auto;
+  }
 
 header {
     background-color: cadetblue;
     text-align: center;
-    padding: 10px;
+    /* padding: 1px; */
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
 ul {
@@ -35,13 +52,29 @@ table {
 
 .main-div {
     display: flex;
+    backface-visibility: hidden;
 }
+
+#city-name {
+    padding-top: 10px;
+    padding-right: 10px;
+}
+
 .currentCity {
     display: flex;
     flex-direction: column;
-    border: 1px solid gray;
+    /* border: 1px solid gray; */
     border-radius: 10px;
     margin-left: 0px;
+}
+
+.Top {
+    display: flex;
+    justify-content: flex-start;
+}
+
+.text {
+    border: solid 2px;
 }
 
 .five-day {
@@ -58,3 +91,16 @@ table {
     background-color: cadetblue;
     border-radius: 10px;
 }
+
+.saveBtn {
+    border-left: 1px solid black;
+    border-top-right-radius: 15px;
+    border-bottom-right-radius: 15px;
+    background-color: #06AED5;
+    color: white;
+  }
+  
+.saveBtn i:hover {
+    font-size: 20px;
+    transition: all .3s ease-in-out;
+  }
