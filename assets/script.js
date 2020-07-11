@@ -5,12 +5,33 @@
 var searchEl = document.querySelector("#searchBtn");
 
 var searchCity = function() {
-    fetch("http://api.openweathermap.org/data/2.5/weather?q=Orlando,us&APPID=3e48a68a50e12b82f2ba32bcf44f8ba8")
+    var searchedCity = document.getElementById("searchText").value;
+        fetch(
+        'http://api.openweathermap.org/data/2.5/weather?q=' +
+        searchedCity +
+        '&APPID=3e48a68a50e12b82f2ba32bcf44f8ba8&units=imperial')
     .then(res => res.json())
-    .then(data => console.log(data.main.temp))
+    .then(function(data) {
+        secondcall(data);
+        thirdcall(data);
+})
 }
+function secondcall (data) {
+    console.log(data);
+        var cityName = data.name;
+        var cityHum = data.main.humidity + " %";
+        var cityTemp = data.main.temp + " °F";
+    var tempEl =document.getElementById("temp")
+         tempEl.innerHTML = ("Temperature: "+ cityTemp)
+    var HumEl =document.getElementById("Hum")
+         HumEl.innerHTML = ("Humidity: "+ cityHum)
+        document.getElementById("city-name").innerHTML = (cityName)
+        // cityNameEl.innerHTML = (cityName)
+        // console.dir(cityNameEl)
 
-//search bar to look at API doc
-//add function that reads index text
+}
+function thirdcall (data) {
+    console.log(data.name)
+}
 
 searchEl.addEventListener("click", searchCity);

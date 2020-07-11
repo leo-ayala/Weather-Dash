@@ -10,6 +10,7 @@ header {
 }
 ul {
     list-style: none;
+    padding-left: 0px;
 }
 
 div {
@@ -34,7 +35,6 @@ table {
 
 .main-div {
     display: flex;
-    flex-wrap: wrap;
 }
 .currentCity {
     display: flex;
