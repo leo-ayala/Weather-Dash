@@ -43,9 +43,26 @@ function topSection (data) {
     var iconEl = document.getElementById("icon")
          iconEl.setAttribute("src", "http://openweathermap.org/img/w/" + dayIcon)
 }
-function thirdcall (data) {
-    console.log(data.name)
-}
+// function thirdcall (data) {
+//     var lat = (data.coord.lat)
+//     var lon = (data.coord.lon)
+    
+// console.log(lat, lon)
+
+// fetch('https://api.openweathermap.org/data/2.5/onecall?lat=' +
+// {lat} +
+// '&lon=' +
+// {lon} +
+// '&appid=3e48a68a50e12b82f2ba32bcf44f8ba8')
+//     .then(res => res.json())
+//     .then(function(data) {
+//         fiveDay(data);
+// })
+// }
+// function fiveDay (data) {
+//     console.log(data)
+// }
+
 function styleChange() {
     var topEl = document.getElementById("header");
     topEl.style.backgroundPositionY = "-191px";
