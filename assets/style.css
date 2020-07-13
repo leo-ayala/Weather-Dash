@@ -8,7 +8,7 @@
     background-position: center;
     background-repeat: no-repeat;
     background-size: auto;
-    background-position-y: -230px;
+    background-position-y: -325px;
   }
 
 .bg2 {
@@ -22,7 +22,6 @@
 header {
     background-color: cadetblue;
     text-align: center;
-    /* padding: 1px; */
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
 ul {
@@ -33,16 +32,6 @@ ul {
 div {
     /* border: solid 2px; */
     padding: 12px;
-}
-
-table {
-    border-collapse: collapse;
-    width: 100%;
-    padding: 10px;
-}
-  table, td, th {
-    border: 1px solid black;
-    padding: 10px;
 }
 
 .searchCity {
@@ -63,7 +52,6 @@ table {
 .currentCity {
     display: flex;
     flex-direction: column;
-    /* border: 1px solid gray; */
     border-radius: 10px;
     margin-left: 0px;
 }

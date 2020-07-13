@@ -20,31 +20,11 @@
     <div class="row main-div">
         <div class="col-3 searchCity">
             <h4>Search for a city:</h4>
-            <input  class="text" id="searchText" type="text" value="Orlando"/>
+            <input  class="text" id="searchText" type="text" value=""/>
             <button class="saveBtn" id="searchBtn" type="submit">
                 <i class="fa fa-sign-in" aria-hidden="true"></i>
             </button>  
-                <div class="city-list">
-                    <table>
-                        <tr>
-                          <td>city</td>
-                        </tr>
-                        <tr>
-                          <td>city</td>
-                        </tr>
-                        <tr>
-                          <td>city</td>
-                        </tr>
-                        <tr>
-                          <td>city</td>
-                        </tr>
-                        <tr>
-                          <td>city</td>
-                        </tr>
-                        <tr>
-                          <td>city</td>
-                        </tr>
-                      </table>
+                <div id="city-list">
                 </div>
         </div>
         <div class="col-9">
@@ -57,53 +37,13 @@
                         <li id="temp"></li>
                         <li id="Hum"></li>
                         <li id="wind"></li>
-                        <li id="UV">UV Index:</li>
+                        <li id="UV"></li>
                     </ul>
             </div>
             <div class="row five-day">
-                <h3>5-day forecast:</h3>
+                <h3 class="fiveTitle" >5-day forecast:</h3>
             </div>
-            <div class="futureForecast">
-            <div class="futuredays">
-                <ul>
-                    <li>Date</li>
-                    <li>img of weather</li>
-                    <li id="temp">Temp:</li>
-                    <li id="Hum">Humidity:</li>
-                </ul>
-            </div>
-            <div class="futuredays">
-                <ul>
-                    <li>Date</li>
-                    <li>img of weather</li>
-                    <li id="temp">Temp:</li>
-                    <li id="Hum">Humidity:</li>
-                </ul>
-            </div>
-            <div class="futuredays">
-                <ul>
-                    <li>Date</li>
-                    <li>img of weather</li>
-                    <li id="temp">Temp:</li>
-                    <li id="Hum">Humidity:</li>
-                </ul>
-            </div>
-            <div class="futuredays">
-                <ul>
-                    <li>Date</li>
-                    <li>img of weather</li>
-                    <li id="temp">Temp:</li>
-                    <li id="Hum">Humidity:</li>
-                </ul>
-            </div>
-            <div class="futuredays">
-                <ul>
-                    <li>Date</li>
-                    <li>img of weather</li>
-                    <li id="temp">Temp:</li>
-                    <li id="Hum">Humidity:</li>
-                </ul>
-            </div>
+            <div id="Forecast" class="futureForecast">
             </div>
         </div>
     </div>
