@@ -18,7 +18,7 @@ var searchCity = function () {
     var searchedCity = document.getElementById("searchText").value;
     document.getElementById("searchText").value = "";
     fetch(
-        'http://api.openweathermap.org/data/2.5/weather?q=' +
+        'https://api.openweathermap.org/data/2.5/weather?q=' +
         searchedCity +
         '&APPID=3e48a68a50e12b82f2ba32bcf44f8ba8&units=imperial')
         .then(res => res.json())
